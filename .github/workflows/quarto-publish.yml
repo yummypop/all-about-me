@@ -10,8 +10,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: quarto-dev/quarto-actions/setup@v2
-      - name: Render Quarto Project
-        run: quarto render
+
+      - name: Render Quarto Project (HTML only)
+        run: quarto render --to html
+
       - name: Publish to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
