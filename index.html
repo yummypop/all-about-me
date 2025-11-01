@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>💜 Portofolio Yumna Fathonah</title>
+  <style>
+    :root {
+      --bg: #f7f3fc;
+      --card: #ffffff;
+      --accent: #c6b3f8;
+      --accent-hover: #b095f5;
+      --text-main: #4b2e83;
+      --text-muted: #7a68a6;
+      --shadow: rgba(0, 0, 0, 0.08);
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", "Segoe UI", sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      display: flex;
+      min-height: 100vh;
+      transition: all 0.3s ease;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 230px;
+      background: linear-gradient(180deg, #ede4ff 0%, #f5edff 100%);
+      box-shadow: 2px 0 10px var(--shadow);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      transition: all 0.3s ease;
+    }
+
+    .sidebar h2 {
+      font-size: 1.1em;
+      color: var(--text-main);
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-muted);
+      padding: 10px 14px;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      font-size: 0.95em;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      background-color: var(--accent);
+      color: #fff;
+      transform: translateX(6px);
+      box-shadow: 0 2px 8px var(--shadow);
+    }
+
+    .footer-note {
+      font-size: 0.8em;
+      text-align: center;
+      color: #aaa;
+    }
+
+    /* Konten utama */
+    .main-content {
+      margin-left: 250px;
+      padding: 50px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 15px var(--shadow);
+      margin-bottom: 20px;
+      border: 4px solid var(--accent);
+      transition: transform 0.3s ease;
+    }
+
+    .profile-pic:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-size: 2.2em;
+      color: var(--text-main);
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      font-size: 1.1em;
+      color: var(--text-muted);
+      margin-top: 0;
+      margin-bottom: 25px;
+      font-weight: 500;
+    }
+
+    p {
+      max-width: 620px;
+      background: var(--card);
+      padding: 20px 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px var(--shadow);
+      line-height: 1.6;
+      position: relative;
+    }
+
+    p::before {
+      content: "💫";
+      position: absolute;
+      top: -10px;
+      left: 15px;
+      font-size: 1.2em;
+    }
+
+    footer {
+      margin-top: 35px;
+      font-size: 0.85em;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div>
+      <h2>🌷 Navigasi</h2>
+      <div class="nav-links">
+        <a href="#">1. 🌸 All About Me</a>
+        <a href="#">2. 🎶 My Song For You</a>
+        <a href="#">3. 📖 My Stories For You</a>
+        <a href="#">4. 🎨 My Shapes</a>
+        <a href="#">5. 💭 My Personal Reviews</a>
+        <a href="#">6. 💡 My Concepts</a>
+        <a href="#">7. 💬 My Opinions</a>
+        <a href="#">8. ✨ My Innovations</a>
+        <a href="#">9. 📚 My Knowledge</a>
+        <a href="#">10. 🧠 My Professional Reviews</a>
+        <a href="#">11. 🌈 Summary</a>
+      </div>
+    </div>
+    <div class="footer-note">
+      <p>💜 by Yumna 💜</p>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <img src="foto-yumna.jpg" alt="Foto Yumna Fathonah" class="profile-pic" />
+    <h1>💜 Yumna Fathonah 💜</h1>
+    <h2>Mahasiswa Sistem dan Teknologi Informasi – Institut Teknologi Bandung</h2>
+
+    <p>
+      Haii! 🌸 Aku Yumna, seorang mahasiswa yang penuh semangat dan suka bereksperimen di dunia
+      teknologi, desain, dan kreativitas. Aku percaya setiap ide kecil bisa jadi sesuatu yang besar
+      kalau dikerjakan dengan cinta dan ketulusan 💫. Yuk, jelajahi portofolio ini dan kenali dunia versi aku!
+    </p>
+
+    <footer>© 2025 Yumna Fathonah. All rights reserved. 🌷</footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>💜 All About Me | Yumna Fathonah</title>
+  <style>
+    :root {
+      --bg: #f7f3fc;
+      --card: #ffffff;
+      --accent: #c6b3f8;
+      --accent-hover: #b095f5;
+      --text-main: #4b2e83;
+      --text-muted: #7a68a6;
+      --shadow: rgba(0, 0, 0, 0.08);
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", "Segoe UI", sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 230px;
+      background: linear-gradient(180deg, #ede4ff 0%, #f5edff 100%);
+      box-shadow: 2px 0 10px var(--shadow);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+    }
+
+    .sidebar h2 {
+      font-size: 1.1em;
+      color: var(--text-main);
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-muted);
+      padding: 10px 14px;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      font-size: 0.95em;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      background-color: var(--accent);
+      color: #fff;
+      transform: translateX(6px);
+      box-shadow: 0 2px 8px var(--shadow);
+    }
+
+    .footer-note {
+      font-size: 0.8em;
+      text-align: center;
+      color: #aaa;
+    }
+
+    /* Konten Utama */
+    .main-content {
+      margin-left: 250px;
+      padding: 50px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2em;
+      color: var(--text-main);
+      font-weight: bold;
+    }
+
+    em {
+      color: var(--text-muted);
+      font-style: italic;
+      display: block;
+      margin-bottom: 25px;
+    }
+
+    p {
+      max-width: 700px;
+      background: var(--card);
+      padding: 20px 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px var(--shadow);
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    .pdf-viewer {
+      margin-top: 40px;
+      background: var(--card);
+      border-radius: 15px;
+      box-shadow: 0 4px 10px var(--shadow);
+      padding: 15px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div>
+      <h2>🌷 Navigasi</h2>
+      <div class="nav-links">
+        <a href="index.html">🏠 Home</a>
+        <a href="all-about-me.html">🌸 All About Me</a>
+        <a href="#">🎶 My Song For You</a>
+        <a href="#">📖 My Stories For You</a>
+        <a href="#">🎨 My Shapes</a>
+        <a href="#">💭 My Personal Reviews</a>
+        <a href="#">💡 My Concepts</a>
+        <a href="#">💬 My Opinions</a>
+        <a href="#">✨ My Innovations</a>
+        <a href="#">📚 My Knowledge</a>
+        <a href="#">🧠 My Professional Reviews</a>
+        <a href="#">🌈 Summary</a>
+      </div>
+    </div>
+    <div class="footer-note">
+      💜 made with love by Yumna 💜
+    </div>
+  </div>
+
+  <div class="main-content">
+    <h1>About Me 🌸</h1>
+    <em>Pernah gak sih kamu membaca tulisan lama, lalu merasa seolah sedang berbicara dengan versi dirimu di masa lalu?</em>
+    <p>
+      Beberapa hari lalu aku membuka kembali naskah yang kutulis saat SMA—<strong>Ukiran di Langit Malam</strong>. Saat membacanya, aku sempat tersenyum, tapi juga sedikit tertampar. Karena dari setiap kata yang kutulis di sana, aku sadar… aku bukan lagi gadis SMA yang menulis dengan api semangat di dadanya. 
+      <br><br>
+      Aku, <strong>Yumna Fathonah Kautsar</strong>, mahasiswa tahun kedua di <em>Institut Teknologi Bandung</em>. Dulu aku begitu yakin ITB adalah tempat di mana semua impianku akan tumbuh. Sekarang? Aku masih di sini. Tapi kadang, pikiranku seolah tertinggal di masa lalu.
+    </p>
+
+    <div class="pdf-viewer">
+      <h3>📄 Ukiran di Langit Malam</h3>
+      <iframe src="ukiran-di-langit-malam.pdf"></iframe>
+    </div>
+  </div>
+</body>
+</html>

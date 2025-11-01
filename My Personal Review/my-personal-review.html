@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>💜 My Personal Review | Yumna Fathonah</title>
+  <style>
+    :root {
+      --bg: #f6f3fb;
+      --card: #ffffff;
+      --soft: #efe8ff;
+      --accent: #c7b3f8;
+      --text-main: #4a2e83;
+      --text-muted: #7d6ba8;
+      --shadow: rgba(0, 0, 0, 0.08);
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 230px;
+      background: linear-gradient(180deg, #ede4ff 0%, #f8f3ff 100%);
+      box-shadow: 2px 0 8px var(--shadow);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+    }
+
+    .sidebar h2 {
+      font-size: 1.2em;
+      margin-bottom: 15px;
+      color: var(--text-main);
+    }
+
+    .nav-links a {
+      display: block;
+      text-decoration: none;
+      color: var(--text-muted);
+      padding: 10px 14px;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      font-size: 0.95em;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      background-color: var(--accent);
+      color: #fff;
+      transform: translateX(6px);
+      box-shadow: 0 2px 8px var(--shadow);
+    }
+
+    /* Main Content */
+    .main-content {
+      margin-left: 250px;
+      padding: 40px 60px;
+      flex: 1;
+    }
+
+    .header {
+      background: linear-gradient(90deg, #f1ebff, #e6dcff);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 10px var(--shadow);
+      margin-bottom: 30px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+
+    .header span {
+      font-size: 0.95em;
+      color: var(--text-muted);
+    }
+
+    .btn-assessment {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 8px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 10px;
+      font-size: 0.9em;
+      transition: 0.3s;
+    }
+
+    .btn-assessment:hover {
+      background: #a88ff0;
+    }
+
+    h2 {
+      color: var(--text-main);
+      font-size: 1.2em;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 18px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px var(--shadow);
+      margin-bottom: 20px;
+    }
+
+    .card p {
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* Dokumen Card */
+    .doc-card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 10px var(--shadow);
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      max-width: 500px;
+      margin: 20px auto;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .doc-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    }
+
+    .doc-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #a3e6a1, #77c97f);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+
+    .doc-info {
+      flex: 1;
+    }
+
+    .doc-info h3 {
+      margin: 0;
+      color: var(--text-main);
+      font-size: 1em;
+    }
+
+    .doc-info p {
+      margin: 2px 0 0;
+      color: var(--text-muted);
+      font-size: 0.85em;
+    }
+
+    footer {
+      text-align: center;
+      color: #aaa;
+      font-size: 0.85em;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div>
+      <h2>🌷 Navigasi</h2>
+      <div class="nav-links">
+        <a href="index.html">🏠 Home</a>
+        <a href="all-about-me.html">🌸 All About Me</a>
+        <a href="my-song-for-you.html">🎶 My Song For You</a>
+        <a href="my-stories-for-you.html">📖 My Stories For You</a>
+        <a href="my-shape-for-you.html">🎨 My Shapes</a>
+        <a href="my-personal-review.html">🪞 My Personal Review</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="header">
+      <h1>🪞 My Personal Review</h1>
+      <span>by Yumna Fathonah</span>
+      <br />
+      <a href="#" class="btn-assessment">📄 Hasil Self-Assessment UTS</a>
+    </div>
+
+    <h2>1. Identifikasi</h2>
+    <div class="card">
+      <p><strong>Nama:</strong> Yumna Fathonah Kautsar</p>
+      <p><strong>NIM:</strong> 18224065</p>
+    </div>
+
+    <h2>2. Tinjauan Umum</h2>
+    <div class="card">
+      <p>
+        Bagian ini berisi refleksi umum dari seluruh rangkaian tugas UTS: mulai dari 
+        <em>All About Me</em> hingga <em>My Shape For You</em>.
+      </p>
+      <p>
+        Setiap bagian menunjukkan perkembangan dalam mengenal diri dan berpikir reflektif.
+      </p>
+    </div>
+
+    <h2>3. Refleksi Per Bagian</h2>
+    <div class="card">
+      <h3>🌸 UTS 1 – All About Me</h3>
+      <p>Menjadi ruang pertama untuk jujur pada diri sendiri dan menulis dari hati.</p>
+    </div>
+    <div class="card">
+      <h3>🎶 UTS 2 – My Song For You</h3>
+      <p>Lagu yang menggambarkan rindu, cinta, dan makna keluarga.</p>
+    </div>
+    <div class="card">
+      <h3>📖 UTS 3 – My Stories For You</h3>
+      <p>Belajar menyusun narasi reflektif dengan emosi yang tulus.</p>
+    </div>
+    <div class="card">
+      <h3>🎨 UTS 4 – My Shape For You</h3>
+      <p>Mengenali kekuatan diri melalui hasil Strengths Profile dan refleksi mendalam.</p>
+    </div>
+
+    <h2>4. Dokumen Penilaian Diri (UTS-5)</h2>
+    <p style="color: var(--text-muted); margin-bottom: 15px;">
+      Dokumen ini berisi hasil penilaian diri terhadap seluruh portofolio yang telah dibuat.
+    </p>
+
+    <!-- Card Dokumen Excel -->
+    <a href="UTS-5_SkorMenilai_YumnaFathonah.xlsx" class="doc-card" target="_blank">
+      <div class="doc-icon">📊</div>
+      <div class="doc-info">
+        <h3>UTS-5_SkorMenilai_YumnaFathonah.xlsx</h3>
+        <p>Author: Yumna Fathonah</p>
+      </div>
+    </a>
+
+    <p style="text-align:center; color:#9b8acb; font-size:0.9em;">
+      File Excel Penilaian Diri dapat diakses melalui tautan di atas.
+    </p>
+
+    <footer>© 2025 Yumna Fathonah | My Personal Review 💜</footer>
+  </div>
+</body>
+</html>

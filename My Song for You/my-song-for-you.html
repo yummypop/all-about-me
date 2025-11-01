@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎵 My Song For You | Yumna Fathonah</title>
+  <style>
+    :root {
+      --bg: #f7f3fc;
+      --card: #ffffff;
+      --accent: #c6b3f8;
+      --accent-hover: #b095f5;
+      --text-main: #4b2e83;
+      --text-muted: #7a68a6;
+      --shadow: rgba(0, 0, 0, 0.08);
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", "Segoe UI", sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 230px;
+      background: linear-gradient(180deg, #ede4ff 0%, #f5edff 100%);
+      box-shadow: 2px 0 10px var(--shadow);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+    }
+
+    .sidebar h2 {
+      font-size: 1.1em;
+      color: var(--text-main);
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-muted);
+      padding: 10px 14px;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      font-size: 0.95em;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      background-color: var(--accent);
+      color: #fff;
+      transform: translateX(6px);
+      box-shadow: 0 2px 8px var(--shadow);
+    }
+
+    .footer-note {
+      font-size: 0.8em;
+      text-align: center;
+      color: #aaa;
+    }
+
+    /* Main content */
+    .main-content {
+      margin-left: 250px;
+      padding: 50px;
+      flex: 1;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2em;
+      color: var(--text-main);
+      margin-bottom: 10px;
+    }
+
+    .audio-container {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0 40px;
+    }
+
+    audio {
+      width: 70%;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px var(--shadow);
+    }
+
+    section {
+      background: var(--card);
+      border-radius: 15px;
+      box-shadow: 0 4px 10px var(--shadow);
+      padding: 25px;
+      margin-bottom: 35px;
+    }
+
+    section h2 {
+      color: var(--text-main);
+      font-size: 1.3em;
+      margin-bottom: 15px;
+    }
+
+    section p {
+      color: var(--text-muted);
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    pre {
+      background: #f3eaff;
+      padding: 15px;
+      border-radius: 10px;
+      white-space: pre-wrap;
+      font-family: "Poppins", sans-serif;
+      line-height: 1.8;
+      color: var(--text-main);
+    }
+
+    footer {
+      text-align: center;
+      color: #999;
+      font-size: 0.85em;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div>
+      <h2>🌷 Navigasi</h2>
+      <div class="nav-links">
+        <a href="index.html">🏠 Home</a>
+        <a href="all-about-me.html">🌸 All About Me</a>
+        <a href="my-song-for-you.html">🎶 My Song For You</a>
+        <a href="#">📖 My Stories For You</a>
+        <a href="#">🎨 My Shapes</a>
+        <a href="#">💭 My Personal Reviews</a>
+        <a href="#">💡 My Concepts</a>
+        <a href="#">💬 My Opinions</a>
+        <a href="#">✨ My Innovations</a>
+        <a href="#">📚 My Knowledge</a>
+        <a href="#">🧠 My Professional Reviews</a>
+        <a href="#">🌈 Summary</a>
+      </div>
+    </div>
+    <div class="footer-note">
+      💜 made with love by Yumna 💜
+    </div>
+  </div>
+
+  <div class="main-content">
+    <h1>🎵 My Song For You</h1>
+
+    <div class="audio-container">
+      <audio controls>
+        <source src="song.mp3" type="audio/mp3">
+        Browser kamu tidak mendukung audio player.
+      </audio>
+    </div>
+
+    <section>
+      <h2>🌸 About the Song</h2>
+      <p>
+        Lagu ini aku tulis sebagai bentuk refleksi pribadi — tentang perjalanan, perasaan, dan kenangan
+        yang selalu menemani di setiap langkah. “My Song For You” menggambarkan betapa kuatnya ikatan
+        antara hati dan kenangan, bahkan ketika waktu terus berjalan.
+      </p>
+    </section>
+
+    <section>
+      <h2>🎶 Lyrics</h2>
+      <pre>
+When the night is calm and blue,
+I still hear your gentle tune,
+A melody that whispers soft and true,
+“My Song for You” — my heart’s cocoon.
+      </pre>
+    </section>
+
+    <section>
+      <h2>💭 Meaning Behind the Lyrics</h2>
+      <p>
+        Setiap bait dalam lagu ini adalah potongan dari perasaan yang tumbuh dalam diam. Aku ingin
+        menyampaikan pesan bahwa cinta dan kenangan tidak pernah benar-benar hilang — mereka hanya
+        berubah bentuk menjadi melodi yang menenangkan hati.
+      </p>
+    </section>
+
+    <footer>© 2025 Yumna Fathonah. All rights reserved. 💜</footer>
+  </div>
+</body>
+</html>
