@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📚 My Knowledge | Yumna Fathonah</title>
+
+  <style>
+    :root {
+      --bg: #f7f3fc;
+      --card: #ffffff;
+      --accent: #c6b3f8;
+      --accent-hover: #b095f5;
+      --text-main: #4b2e83;
+      --text-muted: #7a68a6;
+      --shadow: rgba(0, 0, 0, 0.08);
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", "Segoe UI", sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 230px;
+      background: linear-gradient(180deg, #ede4ff 0%, #f5edff 100%);
+      box-shadow: 2px 0 10px var(--shadow);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+    }
+
+    .sidebar h2 {
+      font-size: 1.05em;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-muted);
+      padding: 10px 14px;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      font-size: 0.95em;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      background-color: var(--accent);
+      color: #fff;
+      transform: translateX(6px);
+    }
+
+    .footer-note {
+      font-size: 0.8em;
+      text-align: center;
+      color: #aaa;
+    }
+
+    .main-content {
+      margin-left: 250px;
+      padding: 50px;
+      flex: 1;
+      max-width: 900px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.2em;
+      margin-bottom: 5px;
+    }
+
+    h2.subtitle {
+      text-align: center;
+      font-size: 1em;
+      color: var(--text-muted);
+      font-weight: 500;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 6px 16px var(--shadow);
+      margin-bottom: 30px;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #5a3fbf;
+    }
+
+    .highlight {
+      background: #f0eaff;
+      padding: 18px;
+      border-left: 5px solid var(--accent);
+      border-radius: 12px;
+      margin: 22px 0;
+      font-style: italic;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85em;
+      color: #999;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="sidebar">
+    <div>
+      <h2>🌷 II2100 KIPP</h2>
+      <div class="nav-links">
+        <a href="index.html">🏠 Home</a>
+        <a href="all-about-me.html">🌸 All About Me</a>
+        <a href="my-song-for-you.html">🎶 My Song For You</a>
+        <a href="my-stories-for-you.html">📖 My Stories For You</a>
+        <a href="my-shape-for-you.html">🎨 My Shapes</a>
+        <a href="my-personal-review.html">💭 My Personal Reviews</a>
+        <a href="my-concepts.html">💡 My Concepts</a>
+        <a href="my-opinions.html">💬 My Opinions</a>
+        <a href="my-innovations.html">✨ My Innovations</a>
+        <a href="my-knowledge.html" class="active">📚 My Knowledge</a>
+        <a href="summary.html">🌈 Summary</a>
+      </div>
+    </div>
+    <div class="footer-note">
+      by Yumna
+    </div>
+  </div>
+
+  <div class="main-content">
+    <h1>📚 My Knowledge</h1>
+    <h2 class="subtitle">
+      Landasan Teoretis Sistem dan Teknologi Informasi dalam Isu Konflik dan Perang
+    </h2>
+
+    <div class="card">
+      <h3>Konflik dan Perang sebagai Fenomena Global</h3>
+      <p>
+        Konflik bersenjata merupakan permasalahan global yang berdampak langsung
+        terhadap stabilitas politik, ekonomi, dan sosial. Data Perserikatan Bangsa-Bangsa
+        menunjukkan bahwa miliaran manusia hidup di wilayah terdampak konflik,
+        dengan puluhan juta di antaranya menjadi pengungsi dan pengungsi internal (IDP).
+      </p>
+      <p>
+        Dalam kajian sistem, konflik dipahami sebagai hasil interaksi kompleks
+        antara aktor, sumber daya, informasi, dan struktur kekuasaan.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Sistem Informasi dan Artificial Intelligence</h3>
+      <p>
+        Sistem informasi berperan dalam pengumpulan, pengolahan, penyimpanan,
+        dan distribusi informasi untuk mendukung pengambilan keputusan.
+        Ketika dipadukan dengan Artificial Intelligence (AI),
+        sistem ini mampu menghasilkan analisis prediktif dan insight strategis.
+      </p>
+      <p>
+        Dalam konteks konflik, AI dimanfaatkan untuk pemetaan wilayah,
+        analisis sentimen publik, serta identifikasi pola eskalasi kekerasan
+        melalui data besar (big data).
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Big Data dan Early Warning System</h3>
+      <p>
+        Early Warning System (EWS) merupakan konsep penting dalam pencegahan konflik.
+        Dengan memanfaatkan big data dari media sosial, citra satelit,
+        dan laporan kemanusiaan, sistem ini dapat mendeteksi indikasi awal
+        ketegangan sosial dan potensi kekerasan.
+      </p>
+      <p>
+        Pendekatan ini menempatkan teknologi informasi sebagai alat preventif,
+        bukan reaktif, dalam menjaga perdamaian.
+      </p>
+
+      <div class="highlight">
+        Pencegahan konflik yang efektif selalu dimulai dari pemahaman data yang tepat.
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Information Warfare dan Disinformation</h3>
+      <p>
+        Perang modern tidak hanya terjadi di medan tempur fisik,
+        tetapi juga di ruang informasi. Disinformasi, propaganda,
+        dan manipulasi opini publik menjadi senjata strategis
+        dalam konflik kontemporer.
+      </p>
+      <p>
+        Oleh karena itu, pemanfaatan teknologi seperti Natural Language Processing (NLP)
+        dan analisis jaringan sosial menjadi krusial untuk menjaga ekosistem informasi
+        yang sehat dan berimbang.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Etika AI dan SDG 16</h3>
+      <p>
+        Penggunaan AI dalam konflik harus dilandasi prinsip etika,
+        transparansi, dan akuntabilitas. Teknologi tidak boleh
+        memperparah ketimpangan atau melegitimasi kekerasan.
+      </p>
+      <p>
+        Sustainable Development Goals (SDG) 16 menekankan pentingnya
+        perdamaian, keadilan, dan institusi yang kuat sebagai fondasi
+        pembangunan global. Sistem dan teknologi informasi harus
+        diarahkan untuk mendukung tujuan tersebut.
+      </p>
+
+      <div class="highlight">
+        Pengetahuan tanpa etika dapat menjadi alat kehancuran;
+        teknologi dengan nilai kemanusiaan menjadi alat perdamaian.
+      </div>
+    </div>
+
+    <footer>
+      © 2025 Yumna Fathonah | My Knowledge 📚
+    </footer>
+  </div>
+</body>
+</html>
