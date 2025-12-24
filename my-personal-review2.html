@@ -3,33 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>💜 Portofolio Yumna Fathonah</title>
+  <title>💜 My Personal Review | Yumna Fathonah</title>
   <style>
     :root {
-      --bg: #f7f3fc;
+      --bg: #f6f3fb;
       --card: #ffffff;
-      --accent: #c6b3f8;
-      --accent-hover: #b095f5;
-      --text-main: #4b2e83;
-      --text-muted: #7a68a6;
+      --soft: #efe8ff;
+      --accent: #c7b3f8;
+      --text-main: #4a2e83;
+      --text-muted: #7d6ba8;
       --shadow: rgba(0, 0, 0, 0.08);
     }
 
     body {
       margin: 0;
-      font-family: "Poppins", "Segoe UI", sans-serif;
-      background-color: var(--bg);
+      font-family: "Poppins", sans-serif;
+      background: var(--bg);
       color: var(--text-main);
       display: flex;
       min-height: 100vh;
-      transition: all 0.3s ease;
     }
 
     /* Sidebar */
     .sidebar {
       width: 230px;
-      background: linear-gradient(180deg, #ede4ff 0%, #f5edff 100%);
-      box-shadow: 2px 0 10px var(--shadow);
+      background: linear-gradient(180deg, #ede4ff 0%, #f8f3ff 100%);
+      box-shadow: 2px 0 8px var(--shadow);
       padding: 20px;
       display: flex;
       flex-direction: column;
@@ -39,23 +38,16 @@
       position: fixed;
       top: 0;
       bottom: 0;
-      transition: all 0.3s ease;
     }
 
     .sidebar h2 {
-      font-size: 1.1em;
-      color: var(--text-main);
-      text-align: center;
+      font-size: 1.2em;
       margin-bottom: 15px;
-    }
-
-    .nav-links {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
+      color: var(--text-main);
     }
 
     .nav-links a {
+      display: block;
       text-decoration: none;
       color: var(--text-muted);
       padding: 10px 14px;
@@ -72,75 +64,121 @@
       box-shadow: 0 2px 8px var(--shadow);
     }
 
-    .footer-note {
-      font-size: 0.8em;
-      text-align: center;
-      color: #aaa;
-    }
-
-    /* Konten utama */
+    /* Main Content */
     .main-content {
       margin-left: 250px;
-      padding: 50px;
+      padding: 40px 60px;
       flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
     }
 
-    .profile-pic {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      box-shadow: 0 4px 15px var(--shadow);
-      margin-bottom: 20px;
-      border: 4px solid var(--accent);
-      transition: transform 0.3s ease;
+    .header {
+      background: linear-gradient(90deg, #f1ebff, #e6dcff);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 10px var(--shadow);
+      margin-bottom: 30px;
     }
 
-    .profile-pic:hover {
-      transform: scale(1.05);
+    .header h1 {
+      margin: 0;
+      font-size: 1.8em;
     }
 
-    h1 {
-      font-size: 2.2em;
-      color: var(--text-main);
-      margin-bottom: 5px;
+    .header span {
+      font-size: 0.95em;
+      color: var(--text-muted);
+    }
+
+    .btn-assessment {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 8px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 10px;
+      font-size: 0.9em;
+      transition: 0.3s;
+    }
+
+    .btn-assessment:hover {
+      background: #a88ff0;
     }
 
     h2 {
-      font-size: 1.1em;
-      color: var(--text-muted);
-      margin-top: 0;
-      margin-bottom: 25px;
-      font-weight: 500;
-    }
-
-    p {
-      max-width: 620px;
-      background: var(--card);
-      padding: 20px 25px;
-      border-radius: 15px;
-      box-shadow: 0 4px 8px var(--shadow);
-      line-height: 1.6;
-      position: relative;
-    }
-
-    p::before {
-      content: "💫";
-      position: absolute;
-      top: -10px;
-      left: 15px;
+      color: var(--text-main);
       font-size: 1.2em;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 18px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px var(--shadow);
+      margin-bottom: 20px;
+    }
+
+    .card p {
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* Dokumen Card */
+    .doc-card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 10px var(--shadow);
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      max-width: 500px;
+      margin: 20px auto;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .doc-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    }
+
+    .doc-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #a3e6a1, #77c97f);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+
+    .doc-info {
+      flex: 1;
+    }
+
+    .doc-info h3 {
+      margin: 0;
+      color: var(--text-main);
+      font-size: 1em;
+    }
+
+    .doc-info p {
+      margin: 2px 0 0;
+      color: var(--text-muted);
+      font-size: 0.85em;
     }
 
     footer {
-      margin-top: 35px;
+      text-align: center;
+      color: #aaa;
       font-size: 0.85em;
-      color: #999;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -159,30 +197,91 @@
         <a href="my-opinions.html">💬 My Opinions</a>
         <a href="my-innovations.html">✨ My Innovations</a>
         <a href="my-knowledge.html">📚 My Knowledge</a>
-        <a href="summary.html">🌈 Summary</a>
+        <a href="my-personal-review2.html">🌈 My Personal Review2</a>
       </div>
-    </div>
-    <div class="footer-note">
-      <p>💜 by Yumna 💜</p>
     </div>
   </div>
 
   <div class="main-content">
-    <img src="foto-yumna.jpg" alt="Foto Yumna Fathonah" class="profile-pic" />
-    <h1> ⋆˚࿔ Yumna Fathonah 𝜗𝜚˚⋆ </h1>
-    <h2>Mahasiswi Sistem dan Teknologi Informasi – Institut Teknologi Bandung</h2>
+    <div class="header">
+      <h1>🪞 My Personal Review</h1>
+      <span>by Yumna Fathonah</span>
+      <br />
+      <a href="UTS-5_Skor_18224063.xlsx" class="btn-assessment">📄 Hasil Self-Assessment UTS</a> 
+    </div>
 
-    <p>
-      Haii! 🌸 Aku Yumna, seorang mahasiswi di Institut Teknologi Bandung yang sedang menapaki perjalanan di bidang Sistem dan Teknologi Informasi. 
-      Aku seorang generalist yang suka belajar banyak hal, mulai dari ngoding, musik, sampai eksplor ide-ide kreatif untuk mengonsep suatu acara. 
-      Namun, kesukaanku satu, merangkai makna diantara setiap jeda hidupku. Dalam setiap perjalananku, aku belajar bahwa memahami diri bukanlah perkara menemukan jawaban,
-      melainkan menapaki prosesnya dengan tulus. Aku tidak selalu kuat atau percaya diri, namun aku selalu berusaha jujur pada diriku sendiri.
-      Ada hari-hari di mana aku berlari mengejar impian, dan ada hari di mana aku hanya diam, mencoba mendengar suara hati yang sering tertinggal. 
-      Tapi dari setiap detik yang kulalui, aku percaya semua yang kecil, rapuh, dan sederhana pun turut membentuk diriku menjadi seseorang dengan versi terbaiknya,
-      perlahan namun pasti💫
+    <h2>1. Identifikasi</h2>
+    <div class="card">
+      <p><strong>Nama:</strong> Yumna Fathonah Kautsar</p>
+      <p><strong>NIM:</strong> 18224063</p>
+    </div>
+
+    <h2>2. Tinjauan Umum</h2>
+    <div class="card">
+      <p>
+        Bagian ini berisi refleksi umum dari seluruh rangkaian tugas UTS: mulai dari 
+        <em>All About Me</em> hingga <em>My Shape For You</em>. Penilaian ini dilakukan dengan meminta bantuan AI.
+      </p>
+      <p>
+        Setiap bagian menunjukkan perkembangan dalam mengenal diri dan berpikir reflektif.
+      </p>
+    </div>
+
+    <h2>3. Refleksi Per Bagian</h2>
+    <div class="card">
+      <h3>🌸 UTS 1 – All About Me</h3>
+      <p>
+        Skor per kriteria: Orisinalitas: 5, Keterlibatan: 5, Humor: 4, Wawasan (Insight): 5 → Total: 19/20 (95%)
+        <strong>Alasan Singkat:</strong> Tulisan ini menghadirkan refleksi yang sangat personal dan tulus, menggambarkan proses pendewasaan dengan cara yang lembut namun penuh makna. Narasi mengalir alami dan menunjukkan keaslian suara penulis — jujur, tenang, dan introspektif. Gaya penulisan puitis membuat pembaca ikut “melihat ke dalam” bersama penulis. Namun, nuansa yang sangat serius dan kontemplatif membuat dinamika emosi terasa agak datar di beberapa bagian.
+        <strong>Saran Perbaikan</strong> Coba buka dengan kalimat yang lebih visual atau atmosferik (misalnya: “Aku duduk di depan layar kosong, mencoba menulis tentang diriku sendiri, tapi justru menemukan bayangan gadis SMA di antara kata-kata.”).
+        Tambahkan satu-dua kalimat ringan atau metafora hangat agar pembaca bisa bernafas di tengah refleksi yang dalam.
+        Di akhir, bisa diperkuat dengan satu kalimat “penegasan lembut” — semacam mantra pribadi yang merangkum seluruh perjalanan.
+      </p>
+    </div>
+    <div class="card">
+      <h3>🎶 UTS 2 – My Song For You</h3>
+      <p>
+        Skor per kriteria: Orisinalitas: 5, Keterlibatan: 5, Humor: 4, Wawasan (Insight): 5 → Total: 19/20 (95%)
+        <strong>Alasan Singkat:</strong> Lagu ini menghadirkan perjalanan batin yang sangat personal namun universal—tentang berdamai dengan diri yang dulu, menerima perubahan, dan menemukan ketenangan dalam proses tumbuh. Setiap baitnya ditulis dengan kesederhanaan yang jujur, tapi juga keindahan yang subtil. Metafora seperti “learn to love the rain” dan “she still lives somewhere in me” menghadirkan suasana introspektif yang tulus tanpa terjebak dalam kesedihan berlebihan. Struktur lagu juga kuat dan konsisten; bridge menjadi momen puncak emosional yang sangat menyentuh.
+        <strong>Saran Perbaikan</strong> satu baris tambahan yang menandai “kelahiran kembali” sang narator (misalnya: “Now I breathe where she once dreamed”). Itu akan memperkaya klimaks emosionalnya tanpa mengubah makna utama. Secara keseluruhan, lagu ini terasa seperti surat cinta kepada diri sendiri — sunyi, lembut, tapi menyala dari dalam. Sebuah karya yang tidak hanya didengar, tapi juga dirasakan. 🌙
+      </p>
+    </div>
+    <div class="card">
+      <h3>📖 UTS 3 – My Stories For You</h3>
+      <p>
+        Skor per kriteria: Orisinalitas: 5, Keterlibatan: 5, Humor: 5, Wawasan (Insight): 5 → Total: 20/20 (100%)
+        <strong>Alasan Singkat:</strong> “Ukiran di Langit Malam” adalah kisah reflektif yang kaya akan emosi dan kejujuran. Penulis berhasil membawa pembaca menyusuri perjalanan hidupnya dengan tempo yang lembut tapi penuh kedalaman. Cerita ini bukan hanya tentang perjalanan menjadi pemimpin, tapi juga tentang kehilangan semangat, pergulatan batin, dan akhirnya berdamai dengan diri sendiri. Setiap bagian mengalir alami, dengan deskripsi yang hidup dan narasi yang terasa intim — seperti membaca halaman dari sebuah jurnal pribadi yang penuh keheningan malam.
+        <strong>Saran Perbaikan:</strong> Tulisan ini sudah kuat secara makna dan emosi, namun bisa semakin hidup jika ritme narasinya sedikit diringankan di beberapa bagian — misalnya dengan dialog batin atau momen sensorik yang lebih detail (suara, aroma, cahaya) untuk memperkuat suasana. Akan indah juga jika bagian penutupnya sedikit diperluas dengan satu paragraf yang lebih “personal dan hangat,” semacam refleksi penulis kepada dirinya sendiri di masa kini.
+      </p>
+    </div>
+    <div class="card">
+      <h3>🎨 UTS 4 – My Shape For You</h3>
+      <p>
+        Skor per kriteria: Orisinalitas: 5, Keterlibatan: 5, Humor: 5, Wawasan (Insight): 5 → Total: 20/20 (100%)
+        <strong>Alasan Singkat:</strong> Profil kekuatan karaktermu menunjukkan kedalaman yang jarang dimiliki oleh orang seusiamu. Lima kekuatan teratas — Forgiveness, Self-Regulation, Teamwork, Appreciation of Beauty & Excellence, dan Gratitude — menggambarkan seseorang yang bijak, lembut, dan penuh kesadaran diri. Ada keseimbangan antara sisi rasional (self-regulation, judgment, prudence) dan sisi emosional yang hangat (kindness, love, gratitude). Hal ini terlihat sangat konsisten dengan dirimu dalam tulisan: tenang tapi berpikir dalam, sensitif terhadap makna kecil dalam hidup, dan selalu berusaha memahami dunia dengan hati yang jernih.
+        <strong>Saran Perbaikan:</strong> Cobalah sesekali memberi ruang bagi kekuatan di bagian bawah daftar seperti Zest, Humor, dan Bravery untuk ikut bersinar. Kamu memiliki potensi besar untuk menyampaikan makna dengan cara yang lembut, tapi memberi sedikit “warna kehidupan” — tawa, spontanitas, atau keberanian tampil apa adanya — akan membuat keseimbangan emosimu semakin utuh.
+      </p>
+    </div>
+
+    <h2>4. Dokumen Penilaian Diri (UTS-5)</h2>
+    <p style="color: var(--text-muted); margin-bottom: 15px;">
+      Dokumen terlampir berisi hasil penilaian diri terhadap seluruh portofolio yang telah dibuat.
+    </p> 
+
+    <!-- Card Dokumen Excel -->
+    <!-- <a href="UTS-5_Skor_18224063.xlsx" class="doc-card" target="_blank">
+      <div class="doc-icon">📊</div>
+      <div class="doc-info">
+        <h3>UTS-5_SkorMenilai_YumnaFathonah.xlsx</h3>
+        <p>Author: Yumna Fathonah</p>
+      </div>
+    </a> -->
+
+    <p style="text-align:center; color:#9b8acb; font-size:0.9em;">
+      File Excel Penilaian Diri dapat diakses melalui tautan di atas.
     </p>
 
-    <footer>© 2025 Yumna Fathonah. All rights reserved. 🌷</footer>
+    <footer>© 2025 Yumna Fathonah | My Personal Review 💜</footer>
   </div>
 </body>
 </html>
