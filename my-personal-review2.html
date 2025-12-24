@@ -4,6 +4,320 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>💜 My Personal Review | Yumna Fathonah</title>
+
+  <style>
+    :root {
+      --bg: #f6f3fb;
+      --card: #ffffff;
+      --soft: #efe8ff;
+      --accent: #c7b3f8;
+      --text-main: #4a2e83;
+      --text-muted: #7d6ba8;
+      --shadow: rgba(0, 0, 0, 0.08);
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 230px;
+      background: linear-gradient(180deg, #ede4ff 0%, #f8f3ff 100%);
+      box-shadow: 2px 0 8px var(--shadow);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+    }
+
+    .nav-links a {
+      display: block;
+      text-decoration: none;
+      color: var(--text-muted);
+      padding: 10px 14px;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      font-size: 0.95em;
+    }
+
+    .nav-links a:hover {
+      background-color: var(--accent);
+      color: #fff;
+      transform: translateX(6px);
+    }
+
+    .main-content {
+      margin-left: 250px;
+      padding: 40px 60px;
+      flex: 1;
+    }
+
+    .header {
+      background: linear-gradient(90deg, #f1ebff, #e6dcff);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 10px var(--shadow);
+      margin-bottom: 30px;
+    }
+
+    .btn-assessment {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 8px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 10px;
+      font-size: 0.9em;
+      transition: 0.3s;
+    }
+
+    .btn-assessment:hover {
+      background: #a88ff0;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: 0 4px 10px var(--shadow);
+      margin-bottom: 25px;
+    }
+
+    /* === TABLE STYLE === */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      font-size: 0.9em;
+    }
+
+    th, td {
+      padding: 12px 14px;
+      border-bottom: 1px solid #e6dcff;
+      vertical-align: top;
+    }
+
+    th {
+      background: #efe8ff;
+      color: var(--text-main);
+      text-align: left;
+    }
+
+    td {
+      color: var(--text-muted);
+    }
+
+    .score {
+      font-weight: bold;
+      color: #5a3fbf;
+    }
+
+    footer {
+      text-align: center;
+      color: #aaa;
+      font-size: 0.85em;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="sidebar">
+    <div>
+      <h2>🌷 II2100 Komunikasi Inter Personal dan Publik</h2>
+      <div class="nav-links">
+        <a href="index.html">🏠 Home</a>
+        <a href="all-about-me.html">🌸 All About Me</a>
+        <a href="my-song-for-you.html">🎶 My Song For You</a>
+        <a href="my-stories-for-you.html">📖 My Stories For You</a>
+        <a href="my-shape-for-you.html">🎨 My Shapes</a>
+        <a href="my-personal-review.html">💭 My Personal Reviews</a>
+        <a href="my-concepts.html" class="active">💡 My Concepts</a>
+        <a href="my-opinions.html">💬 My Opinions</a>
+        <a href="my-innovations.html">✨ My Innovations</a>
+        <a href="my-knowledge.html">📚 My Knowledge</a>
+        <a href="my-personal-review2.html">🌈 My Personal Review2</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-content">
+
+    <div class="header">
+      <h1>🪞 My Personal Review</h1>
+      <span>by Yumna Fathonah</span>
+      <br />
+      <a href="UAS-5_Skor_18224063.xlsx" class="btn-assessment">📄 Hasil Self-Assessment UTS</a> 
+    </div>
+
+    <h2>1. Identifikasi</h2>
+    <div class="card">
+      <p><strong>Nama:</strong> Yumna Fathonah Kautsar</p>
+      <p><strong>NIM:</strong> 18224063</p>
+    </div>
+
+    <h2>2. Tinjauan Umum</h2>
+    <div class="card">
+      <p>
+        Penilaian ini merupakan refleksi dan evaluasi menyeluruh terhadap portofolio UAS
+        yang mencakup My Concepts, My Opinions, My Innovations, dan My Knowledge.
+      </p>
+    </div>
+
+    <h2>3. Refleksi & Penilaian Per Bagian</h2>
+
+    <!-- MY CONCEPTS -->
+    <div class="card">
+      <h3>💡 UAS 1 – My Concepts</h3>
+      <table>
+        <tr>
+          <th>Kriteria</th>
+          <th>Skor</th>
+          <th>Deskripsi</th>
+        </tr>
+        <tr>
+          <td>Kejelasan</td>
+          <td class="score">4.7</td>
+          <td>Konsep AI-Driven PeaceTech dijelaskan secara runtut dan mudah dipahami.</td>
+        </tr>
+        <tr>
+          <td>Logika</td>
+          <td class="score">4.6</td>
+          <td>Alur pemikiran sistematis dari masalah menuju solusi teknologi.</td>
+        </tr>
+        <tr>
+          <td>Desain</td>
+          <td class="score">4.8</td>
+          <td>Struktur visual dan narasi sangat mendukung pemahaman konsep.</td>
+        </tr>
+        <tr>
+          <td>Akurasi</td>
+          <td class="score">4.5</td>
+          <td>Didukung pemahaman AI dan SI yang tepat dan relevan.</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- MY OPINIONS -->
+    <div class="card">
+      <h3>💬 UAS 2 – My Opinions</h3>
+      <table>
+        <tr>
+          <th>Kriteria</th>
+          <th>Skor</th>
+          <th>Deskripsi</th>
+        </tr>
+        <tr>
+          <td>Kejelasan</td>
+          <td class="score">4.6</td>
+          <td>Opini disampaikan dengan bahasa reflektif dan jelas.</td>
+        </tr>
+        <tr>
+          <td>Persuasi</td>
+          <td class="score">4.5</td>
+          <td>Argumen cukup kuat dan relevan dengan isu konflik dan teknologi.</td>
+        </tr>
+        <tr>
+          <td>Analisis</td>
+          <td class="score">4.7</td>
+          <td>Menunjukkan kemampuan berpikir kritis dan kontekstual.</td>
+        </tr>
+        <tr>
+          <td>Kedalaman</td>
+          <td class="score">4.6</td>
+          <td>Refleksi mendalam terhadap dampak sosial teknologi.</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- MY INNOVATIONS -->
+    <div class="card">
+      <h3>✨ UAS 3 – My Innovations</h3>
+      <table>
+        <tr>
+          <th>Kriteria</th>
+          <th>Skor</th>
+          <th>Deskripsi</th>
+        </tr>
+        <tr>
+          <td>Kebaruan</td>
+          <td class="score">4.8</td>
+          <td>Inovasi menunjukkan ide kreatif dan orisinal.</td>
+        </tr>
+        <tr>
+          <td>Kelayakan</td>
+          <td class="score">4.5</td>
+          <td>Dapat dikembangkan secara teknis dengan pendalaman lanjutan.</td>
+        </tr>
+        <tr>
+          <td>Dampak</td>
+          <td class="score">4.7</td>
+          <td>Berpotensi besar dalam mitigasi konflik dan perlindungan sipil.</td>
+        </tr>
+        <tr>
+          <td>Presentasi</td>
+          <td class="score">4.6</td>
+          <td>Penyajian ide inovasi terstruktur dan komunikatif.</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- MY KNOWLEDGE -->
+    <div class="card">
+      <h3>📚 UAS 4 – My Knowledge</h3>
+      <table>
+        <tr>
+          <th>Kriteria</th>
+          <th>Skor</th>
+          <th>Deskripsi</th>
+        </tr>
+        <tr>
+          <td>Kejelasan</td>
+          <td class="score">4.6</td>
+          <td>Materi teoritis dijelaskan dengan bahasa akademik yang jelas.</td>
+        </tr>
+        <tr>
+          <td>Kedalaman</td>
+          <td class="score">4.5</td>
+          <td>Pembahasan cukup mendalam dan relevan.</td>
+        </tr>
+        <tr>
+          <td>Sintesis</td>
+          <td class="score">4.7</td>
+          <td>Mampu mengaitkan teori dengan praktik sistem informasi.</td>
+        </tr>
+        <tr>
+          <td>Aplikasi</td>
+          <td class="score">4.6</td>
+          <td>Pengetahuan diaplikasikan secara kontekstual pada isu konflik.</td>
+        </tr>
+      </table>
+    </div>
+
+    <footer>© 2025 Yumna Fathonah | My Personal Review 💜</footer>
+  </div>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>💜 My Personal Review | Yumna Fathonah</title>
   <style>
     :root {
       --bg: #f6f3fb;
@@ -254,15 +568,6 @@
       Dokumen terlampir berisi hasil penilaian diri terhadap seluruh portofolio yang telah dibuat.
     </p> 
 
-    <!-- Card Dokumen Excel -->
-    <!-- <a href="UTS-5_Skor_18224063.xlsx" class="doc-card" target="_blank">
-      <div class="doc-icon">📊</div>
-      <div class="doc-info">
-        <h3>UTS-5_SkorMenilai_YumnaFathonah.xlsx</h3>
-        <p>Author: Yumna Fathonah</p>
-      </div>
-    </a> -->
-
     <p style="text-align:center; color:#9b8acb; font-size:0.9em;">
       File Excel Penilaian Diri dapat diakses melalui tautan di atas.
     </p>
@@ -270,4 +575,4 @@
     <footer>© 2025 Yumna Fathonah | My Personal Review 💜</footer>
   </div>
 </body>
-</html>
+</html> -->
